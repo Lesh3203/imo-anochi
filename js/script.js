@@ -1,33 +1,27 @@
-$('.grid_item').css('border-radius','20px')
-$('button').css('border-radius','20px')
-document.body.style.backgroundColor = "#ebf1f3";
+$('.grid_item, button').css('border-radius','20px');
 
-$('.header').css('color','#266A82')
+$('.header').css('color','#266A82');
 
-$('.input').css('border-color','#F9A268')
-$('.input').css('background-color','#EBF1F3')
-$('.input').css('border-radius','100px')
+$('.input').css({
+  'border-color':'#F9A268',
+  'background-color':'#EBF1F3',
+  'border-radius':'100px'
+});
 
-$('.label').css('background-color','#EBF1F3')
-$('.label').css('color','#3D4548')
+$('.label').css({
+  'background-color':'#EBF1F3',
+  'color':'#3D4548'
+});
 
-.input {
-  background-color: #EBF1F3;
+document.body.style.backgroundColor = "#EBF1F3";
+
+document.head.appendChild(Object.assign(document.createElement('style'), {
+  textContent: `
+.green [type="checkbox"]:checked + label::before,
+.green [type="checkbox"]:not(:checked) + label::before {
   border: 1px solid #F9A268;
-  border-radius: 100px;
+  border-radius: 10px;
+  background: #EBF1F3;
 }
-
-.green [type="checkbox"]:checked + label:before, .green [type="checkbox"]:not(:checked) + label:before {
-    border: 1px solid #F9A268;
-    border-radius: 10px;
-    background: #EBF1F3;
-}
-
-.label {
-  background-color: #EBF1F3;
-  color: #3D4548;
-}
-
-.header {
-  color: #266A82
-}
+`
+}));
