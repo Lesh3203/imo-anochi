@@ -6,7 +6,7 @@ $('.input, button').css({
   'border-color':'#F9A268',
   'background-color':'#EBF1F3',
   'border-radius':'100px'
-  'padding':'12px'
+  'padding' :'12px'
   'font-size':'16px'
   'line-height':'24px'
 });
