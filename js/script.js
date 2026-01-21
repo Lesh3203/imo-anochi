@@ -1,4 +1,3 @@
-
 $('.grid_item').css('border-radius','20px')
 $('button').css('border-radius','20px')
 document.body.style.backgroundColor = "#ebf1f3";
